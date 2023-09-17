@@ -36,4 +36,4 @@ jobs:
           run: |
             echo Add other actions to build,
             echo test, and deploy your project.
-            echo "${{ env.num1 }}"
+            echo &env.num1
