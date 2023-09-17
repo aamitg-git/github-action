@@ -27,11 +27,12 @@ jobs:
 
         # Runs a single command using the runners shell
         - name: Run a one-line script
+          id : step1
           run: echo Hello, world!
-               export num1='1' 
-               echo "num1= '1'" >> $GITHUB_ENV
+               echo "num1=1" >> $GITHUB_ENV
         # Runs a set of commands using the runners shell
         - name: Run a multi-line script
+          id : step2
           run: |
             echo Add other actions to build,
             echo test, and deploy your project.
